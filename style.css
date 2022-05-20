@@ -50,7 +50,7 @@ p {
 
 .btn {
   min-width: 150px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   display: inline-block;
@@ -61,6 +61,14 @@ p {
   text-decoration: none;
   color: #ffffff;
   background-color: #111B47;
+}
+
+.btn.btn-lg {
+  font-size: 16px;
+}
+
+.btn.btn-sm {
+  font-size: 12px;
 }
 
 .btn:hover {
@@ -90,23 +98,11 @@ p {
 }
 
 .content-section {
-  padding-bottom: 140px;
-}
-
-.social-section {
-  padding-bottom: 188px;
-}
-
-.mention-section {
-  padding-bottom: 150px;
+  padding: 94px 0 94px;
 }
 
 .section-heading-text {
   padding-bottom: 31px;
-}
-
-.mention-section .section-heading a {
-  font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -114,32 +110,33 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
+    align-items: center;
   }
 
-  .column {
+  .content-information .column {
     width: 50%;
     padding: 0 10px;
   }
-} 
+
+  .content-information.content-information-revers {
+    flex-direction: row-reverse;
+  }
+  
+  .content-information.content-information-revers .section-heading {
+    padding: 0 0 35px 0;
+  }
+}
 
 @media (min-width: 1024px) {
-  .content-section .column-img {
-    padding-left: 26px;
+  .content-section .column-img.alt-indent {
+    margin: 20px 0 20px 20px;
   }
 
-  .mention-section .column-img {
-    padding-left: 43px;
+  .content-section .column-img.small-indent {
+    margin: 49px 0 0 41px;
   }
 
   .section-heading {
-    padding: 45px 0 80px 96px;
-  }
-
-  .mention-section .section-heading {
-    padding: 0 0 80px 96px;
-  }
-
-  .social-section .section-heading {
-    padding: 75px 0 80px 96px;
+    padding: 35px 0 0px 96px;
   }
 }
